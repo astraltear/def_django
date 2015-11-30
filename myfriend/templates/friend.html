@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+{% if friends.count > 0 %}
+	{%for data in friends %}
+		<div>
+		{{data.id}}
+		{{data.name}}
+		{{data.addr}}
+	</div>
+	{% endfor %}
+
+{% else %}
+	NOT FOUND
+{% endif %}
+
+
+</body>
+</html>
